@@ -11,6 +11,7 @@ import com.HMS.testyantra.POM_repository.DoctorDashboardpage;
 import com.HMS.testyantra.genricutility.Baseclass;
 
 public class TS_Doctor_module extends Baseclass{
+	//welcome
 @Test(groups = "endtoend")
 	public void Update_Profile() throws Throwable {
 		DoctorDashboardpage doctordashpage=new DoctorDashboardpage(driver);
