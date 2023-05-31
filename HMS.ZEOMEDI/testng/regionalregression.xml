@@ -1,0 +1,18 @@
+ <?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test thread-count="5" name="Test">
+    <classes>
+      <class name="Doctor_Module.TS_04_Addpatient">
+		  <methods>
+			  <include name="addpatient"></include>
+		  </methods>
+	  </class>
+      <class name="Doctor_Module.TS_06_CancelPatient">
+		  <methods>
+			  <include name="cancelpatient"></include>
+		  </methods>
+      </class>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

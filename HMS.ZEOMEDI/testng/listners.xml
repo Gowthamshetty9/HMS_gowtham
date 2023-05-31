@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+	<listeners>
+		<listener class-name="com.HMS.testyantra.genricutility.Listnerimpclass"></listener>
+	</listeners>
+  <test thread-count="5" name="Test">
+    <classes>
+      <class name=""/>
+      <class name="Doctor_Module.TS_01_VerifyLogin"/>
+      <class name="Practice.DataProviderClass"/>
+      <class name="Doctor_Module.TS_04_Addpatient"/>
+      <class name="Practice.DataProvider2"/>
+      <class name="Practice.DataProvider1"/>
+      <class name="Doctor_Module.TS_03_UpdateProfile"/>
+      <class name="Practice.DataProviderExcel"/>
+      <class name="Doctor_Module.TS_08_ChangePassword"/>
+      <class name="Practice.DataProvider6"/>
+      <class name="Practice.DataProvider5"/>
+      <class name="Practice.DataProvider4"/>
+      <class name="Doctor_Module.TS_05_ManagePatient"/>
+      <class name="Practice.DataProvider"/>
+      <class name="Doctor_Module.TS_06_CancelPatient"/>
+      <class name="Doctor_Module.TS_02_ForgetPassword"/>
+      <class name="Doctor_Module.TS_07_SearchPatient"/>
+      <class name="Practice.AnnotationsAndArguments"/>
+      <class name="Practice.DataProviderExcelgenric"/>
+      <class name="Practice.Annotations"/>
+      <class name="Doctor_Module.TS_Doctor_module"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
