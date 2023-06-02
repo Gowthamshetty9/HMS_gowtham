@@ -31,7 +31,7 @@ public class Baseclass {
 	public javautility javautils=new javautility();
 	public DataBaseutility dbutils=new DataBaseutility();
     // @Parameters("browser")
-	@BeforeClass(groups ={"smoke","endtoend"} )
+	@BeforeClass
 	public void Openbrowser() throws Throwable {
 		String browsername = fileutils.Readdatafromfile("browser");
 		if (browsername.equalsIgnoreCase("chrome")) {
@@ -54,22 +54,22 @@ public class Baseclass {
 		//Loginpage loginpage=new Loginpage(driver);
 		//loginpage.doctorslogin().click();
 	}
-	@AfterClass(groups = {"smoke","endtoend"})
+	@AfterClass
 	public void postconditions() {
 		driver.manage().window().minimize();
 		driver.quit();
 	}
-	@BeforeSuite(groups = {"smoke","endtoend"})
+	@BeforeSuite
 	public void connect_DB() throws Throwable {
 		dbutils.open_DB();
 		System.out.println("__connect to db__");
 	}
-	@AfterSuite(groups = {"smoke","endtoend"})
+	@AfterSuite
 	public void close_DB() throws SQLException {
 		dbutils.close_DB();
 		System.out.println("__db connection closed__");
 	}
-	@BeforeMethod(groups = {"smoke","endtoend"})
+	@BeforeMethod
 	public void logintoapp() throws Throwable {
 		//driver.get(fileutils.Readdatafromfile("url"));
 		Loginpage loginpage=new Loginpage(driver);

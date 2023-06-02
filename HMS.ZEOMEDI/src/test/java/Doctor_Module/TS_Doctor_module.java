@@ -12,7 +12,7 @@ import com.HMS.testyantra.genricutility.Baseclass;
 
 public class TS_Doctor_module extends Baseclass{
 	//welcome
-@Test(groups = "endtoend")
+@Test
 	public void Update_Profile() throws Throwable {
 		DoctorDashboardpage doctordashpage=new DoctorDashboardpage(driver);
 		doctordashpage.updateprofile().click();
@@ -43,7 +43,7 @@ public class TS_Doctor_module extends Baseclass{
    
         Reporter.log("Edit doctor's page is displayed",true);
 	}
-@Test(groups = "endtoend")
+@Test
 	public void AddPatient() throws Throwable {
 		DoctorDashboardpage doctordashboardpage=new DoctorDashboardpage(driver);
 		  Addpatientpage addpatientpage=new Addpatientpage(driver);
@@ -72,7 +72,7 @@ public class TS_Doctor_module extends Baseclass{
 		  
 		  Reporter.log("Addpatient is pass",true);
 	}
-@Test(groups = "smoke")
+@Test
 	public void Manage_Patient() throws Throwable {
 	DoctorDashboardpage doctordashpage=new DoctorDashboardpage(driver);
 	doctordashpage.patientsmenu().click();
@@ -113,7 +113,7 @@ public class TS_Doctor_module extends Baseclass{
 		
 		   Reporter.log("Cancel_Patient is pass",true);
 	}
-	@Test(groups = "smoke")
+	@Test
 	public void Search_patient() throws Throwable {
 		DoctorDashboardpage doctordashpage=new DoctorDashboardpage(driver);
 		Addpatientpage addpatient=new Addpatientpage(driver);
