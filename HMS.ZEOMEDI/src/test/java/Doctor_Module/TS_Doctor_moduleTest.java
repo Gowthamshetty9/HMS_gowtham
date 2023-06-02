@@ -10,7 +10,7 @@ import com.HMS.testyantra.POM_repository.Addpatientpage;
 import com.HMS.testyantra.POM_repository.DoctorDashboardpage;
 import com.HMS.testyantra.genricutility.Baseclass;
 
-public class TS_Doctor_module extends Baseclass{
+public class TS_Doctor_moduleTest extends Baseclass{
 	//welcome
 @Test
 	public void Update_Profile() throws Throwable {
