@@ -14,7 +14,6 @@ import com.HMS.testyantra.genricutility.Baseclass;
 public class TS_01_VerifyLogin extends Baseclass{
 	  @Test(retryAnalyzer=com.HMS.testyantra.genricutility.retryanalyserclass.class)
 	  public void verigylogin() throws Throwable {
-		//welcome
 		Loginpage loginpage=new Loginpage(driver);
 		DoctorDashboardpage doctordashpage=new DoctorDashboardpage(driver);
 		
